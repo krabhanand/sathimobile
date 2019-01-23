@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sathi App</string>
+
+    <string name="hello_world">Welcome to Sathi app!</string>
+    <string name="action_settings">Settings</string>
+    <string name="number">9006236676</string>
+    <string name="password">kkgenkai</string>
+    <string name="title_activity_lop">lop</string>
+    <string name="title_activity_starter">Starter</string>
+    <string name="title_activity_setpwd">setpwd</string>
+    <string name="title_activity_startert">Startert</string>
+</resources>

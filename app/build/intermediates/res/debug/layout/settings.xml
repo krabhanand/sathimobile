@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:id="@+id/kol"
+    android:textAlignment="gravity">
+
+    <TextView
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sathi App"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView16"
+        android:layout_weight="0.11"
+        android:textColor="#00A99D"
+        android:background="#FFFFFF"
+        android:textSize="36sp"
+        />
+
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="Change Mobile Number"
+        android:textSize="19.5sp"
+        android:textColor="#FFFFFF"
+        android:background="#00A99D"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textView17"
+        android:layout_weight="0.11" />
+
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:background="#00A99D"
+        android:text="Change Password"
+        android:textSize="19.5sp"
+        android:id="@+id/button5"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_weight="0.11" />
+
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="Set Speed Limit"
+        android:textColor="#FFFFFF"
+        android:textSize="19.5sp"
+        android:background="#00A99D"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button17"
+        android:layout_weight="0.11" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_weight="0.11" />
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="Travel Mode"
+        android:textColor="#FFFFFF"
+        android:textSize="19.5sp"
+        android:background="#00A99D"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button2"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="© WWW.SATHIAPP.COM"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView21"
+        android:layout_weight="0.06"
+        android:textColor="#00A99D"
+        android:background="#FFFFFF"
+        android:textSize="14sp"
+        />
+
+</LinearLayout><!-- From: file:/C:/Users/Anand/AndroidStudioProjects/MyApplication/app/src/main/res/layout/settings.xml -->

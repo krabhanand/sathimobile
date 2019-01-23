@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sathi.android.sathiapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/sathi_l"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sathi.android.sathiapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sathi.android.sathiapp.Settings"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sathi.android.sathiapp.Pwdspeed"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.PWDSPEED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sathi.android.sathiapp.Lop"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.LOP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sathi.android.sathiapp.PwdPwd"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.PWDPWD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sathi.android.sathiapp.PwdNum"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.PWDNUM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.sathi.android.sathiapp.MyReciever"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sathi.android.sathiapp.UNinstall"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.sathi.android.sathiapp.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <receiver
+            android:name="com.sathi.android.sathiapp.PackageChangeReciever"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.sathi.android.sathiapp.Checker"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="com.sathi.android.sathiapp.TravelMode"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="com.sathi.android.sathiapp.Peerm"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.sathi.android.sathiapp.Starter"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.Starter" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sathi.android.sathiapp.Setpwd"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.Setpwd" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sathi.android.sathiapp.Startert"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sathi.android.sathiapp.Startert" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+ >
+        </activity>
+    </application>
+
+</manifest>
